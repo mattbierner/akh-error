@@ -1,0 +1,33 @@
+{
+  "name": "akh.error",
+  "version": "0.0.0",
+  "description": "Akh error monad",
+  "author": "Matt Bierner",
+  "license": "MIT",
+  "keywords": [
+    "monad transformer",
+    "monad",
+    "akh",
+    "error"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbierner/akh-error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattbierner/akh-error/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "akh.core.spec": "0.x",
+    "akh.either": "0.0.0",
+    "akh.identity": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha ./tests"
+  }
+}
