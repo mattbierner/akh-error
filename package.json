@@ -1,6 +1,6 @@
 {
   "name": "akh.error",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Akh error monad and monad transformer",
   "author": "Matt Bierner",
   "license": "MIT",
@@ -20,7 +20,7 @@
   "main": "index.js",
   "dependencies": {
     "akh.core.spec": "0.x",
-    "akh.either": "0.0.0",
+    "akh.either": "^0.0.1",
     "akh.identity": "^0.1.0"
   },
   "devDependencies": {
