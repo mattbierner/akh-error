@@ -9,9 +9,8 @@ describe('Error', () => {
     it("simple_of", () => {
         const c = Error.of(3)
 
-        assert.deepEqual(
-            Error.attempt(c, null),
-            3)
+        assert.strictEqual(3, Error.attempt(c, null))
+        assert.strictEqual(3, c.attempt(null))
     })
 
     it("simple_chain", () => {

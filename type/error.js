@@ -1,4 +1,3 @@
-
 "use strict"
 const Identity = require('akh.identity').Identity
 const ErrorT = require('../trans/error')
@@ -24,6 +23,10 @@ Error.run = Error.prototype.run = (m, ok, err) =>
         x => Identity.of(ok(x)),
         x => Identity.of(err(x))))
 
+Error.prototype.run = function(ok, err) {
+    return Error.run(this, ok, err)
+}
+
 /**
  * Perform a error computation with error handler.
  * 
@@ -33,6 +36,10 @@ Error.run = Error.prototype.run = (m, ok, err) =>
 Error.try = Error.prototype.try = (m, e) =>
     Error.run(m, id, e)
 
+Error.prototype.try = function(e) {
+    return Error.try(this, e)
+}
+
 /**
  * Perform a error computation and if it fails, return a default value.
  * 
@@ -41,5 +48,9 @@ Error.try = Error.prototype.try = (m, e) =>
  */
 Error.attempt = Error.prototype.attempt = (m, def) =>
     Error.try(m, constant(def))
+
+Error.prototype.attempt = function(def) {
+    return Error.attempt(this, def)
+}
 
 module.exports = Error

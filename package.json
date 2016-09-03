@@ -1,7 +1,7 @@
 {
   "name": "akh.error",
-  "version": "0.0.0",
-  "description": "Akh error monad",
+  "version": "0.0.1",
+  "description": "Akh error monad and monad transformer",
   "author": "Matt Bierner",
   "license": "MIT",
   "keywords": [
@@ -24,6 +24,7 @@
     "akh.identity": "^0.1.0"
   },
   "devDependencies": {
+    "akh.state": "0.0.0",
     "chai": "*",
     "mocha": "*"
   },
