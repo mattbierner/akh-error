@@ -11,7 +11,7 @@ $ npm install --save akh
 ```
 
 ## Usage
-The `ErrorT` and `Error` implement the [Fantasy Land][fl] monad, functor, and applicative functor interfaces.
+`ErrorT` and `Error` implement the [Fantasy Land][fl] monad, functor, and applicative functor interfaces.
 
 <a href="https://github.com/fantasyland/fantasy-land">
     <img src="https://raw.github.com/fantasyland/fantasy-land/master/logo.png" align="right" width="82px" height="82px" alt="Fantasy Land logo" />
